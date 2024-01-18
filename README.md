@@ -8,31 +8,44 @@ The solver included in the game uses a backtracking algorithm to find a solution
 
 ## Usage
 
-To use the Sudoku solver, you can run the provided Python script. The script will generate a new Sudoku board and prompt the user to play or solve the board.
+To use the Sudoku solver, you can run `sudoku.py`. The script will generate a new Sudoku board and prompt the user to play or solve the board.
 
 ```
--------NEW-GAME-------
 Original Sudoku board:
-5 0 0 | 0 0 0 | 0 0 0
-0 7 4 | 2 0 0 | 0 0 0
-0 8 0 | 0 0 0 | 0 3 0
+1 2 3 | 0 5 0 | 0 8 9
+0 5 6 | 7 0 9 | 1 2 3
+7 8 9 | 1 0 0 | 0 0 6
 - - - - - - - - - - - -
-0 6 0 | 0 0 0 | 4 0 3
-4 0 7 | 0 0 0 | 0 0 0
-0 0 0 | 0 0 3 | 0 0 6
+2 1 4 | 3 0 5 | 8 9 7
+0 0 5 | 8 0 0 | 2 1 4
+8 0 0 | 0 0 0 | 3 6 0
 - - - - - - - - - - - -
-0 0 0 | 0 0 0 | 0 0 0
-0 0 0 | 0 5 0 | 6 0 0
-0 0 0 | 6 0 0 | 0 0 0
+0 0 1 | 0 4 2 | 9 0 8
+6 0 2 | 9 7 0 | 5 3 0
+9 7 0 | 5 0 1 | 6 0 2
 
 Do you want to play (p) or get the board solved (s)? Default is solving.
+```
+Here is an example if the user selected to autosolve the board:
+```
+Solving Sudoku...
+Sudoku solved:
+1 2 3 | 4 5 6 | 7 8 9
+4 5 6 | 7 8 9 | 1 2 3
+7 8 9 | 1 2 3 | 4 5 6
+- - - - - - - - - - - -
+2 1 4 | 3 6 5 | 8 9 7
+3 6 5 | 8 9 7 | 2 1 4
+8 9 7 | 2 1 4 | 3 6 5
+- - - - - - - - - - - -
+5 3 1 | 6 4 2 | 9 7 8
+6 4 2 | 9 7 8 | 5 3 1
+9 7 8 | 5 3 1 | 6 4 2
 ```
 
 If you choose to play (`p`), you will be prompted to enter the row, column, and number to place in the Sudoku board. The program will check if the move is valid and update the board accordingly. If you solve the entire Sudoku board, you will see a congratulatory message.
 
-If you choose to get the board solved (`s`), the program will attempt to solve the Sudoku board and display the solution.
-
-After each game or solution, you will be asked if you want to play again. Entering `y` will generatea new Sudoku board, and entering `n` will end the program.
+If you choose to get the board solved (`s`), as demonstrated above, the program will attempt to solve the Sudoku board and display the solution.
 
 ## Docs
 
